@@ -11,7 +11,7 @@ from SI.Report import School_report_smoke_testing
 from SR import semester_report_smoke_testing
 from Semester_Exception import exception_smoke_testing
 from Telemetry import telemetry_smoke_testing
-from UDISE.UDISE_map_report import udise_smoke_testing
+from UDISE import udise_smoke_testing
 
 from get_dir import pwd
 

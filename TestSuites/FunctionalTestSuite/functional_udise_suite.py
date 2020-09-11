@@ -1,4 +1,4 @@
-from UDISE.UDISE_map_report import  udise_regression_testing
+from UDISE import udise_regression_testing
 from get_dir import pwd
 import unittest
 from HTMLTestRunner import HTMLTestRunner
