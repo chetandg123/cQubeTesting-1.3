@@ -35,7 +35,12 @@ Steps to execute the test script
 	  password= #Enter the password of report viewer
 	  admin_username = #Enter the admin user name 
 	  admin_password = #Enter the admin password
-	  
+	  createadmin= #for creating new admin user provide name of admin
+          adminpassword= # Enter password for new admin
+          createviewer= #for creating new admin user provide name of reportviewer
+          viewerpassword= # Enter password for new viewer
+          createemission= #for creating new admin user provide name of emission user
+          emissionpassword= # Enter password for new emission user	  
 
 For Executing the Regression Test suites using pytest 
 	if using pycharm 
