@@ -14,6 +14,7 @@ from SI.Report import  School_report_regression_testing
 from SR import  semester_report_regression_testing
 from Semester_Exception import  exception_regression_testing
 from Telemetry import telemetry_regression_testing
+from UDISE import udise_regression_testing
 
 from get_dir import pwd
 
@@ -309,6 +310,26 @@ class MyTestSuite(unittest.TestCase):
             runner1 = HTMLTestRunner.HTMLTestRunner(
                 stream=outfile,
                 title='Telemetry Regression Test Report',
+                verbosity=1,
+
+            )
+
+            runner1.run(regression_test)
+            outfile.close()
+
+    def test_issue13(self):
+
+            regression_test = unittest.TestSuite()
+            regression_test.addTests([
+                unittest.defaultTestLoader.loadTestsFromTestCase(
+                    udise_regression_testing.cQube_udise_Report)
+            ])
+            p = pwd()
+            outfile = open(p.get_regression_report_path(), "a")
+
+            runner1 = HTMLTestRunner.HTMLTestRunner(
+                stream=outfile,
+                title='Udise Regression Test Report',
                 verbosity=1,
 
             )

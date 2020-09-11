@@ -172,12 +172,7 @@ class MyTestSuite(unittest.TestCase):
             outfile.close()
 
     def test_issue08(self):
-        # self.data.navigate_to_diksha_graph()
-        # time.sleep(3)
-        # self.errMsg = self.data.get_data_status()
-        # if self.errMsg.text == 'No data found':
-        #     print("No data in the diksha chart report page")
-        # else:
+
             regression_test = unittest.TestSuite()
             regression_test.addTests([
                 unittest.defaultTestLoader.loadTestsFromTestCase(diksha_chart_system_testing.cQube_diskha_chart)
@@ -196,12 +191,7 @@ class MyTestSuite(unittest.TestCase):
             outfile.close()
 
     def test_issue09(self):
-        # self.data.navigate_to_diksha_table()
-        # time.sleep(3)
-        # self.errMsg = self.data.get_data_status()
-        # if self.errMsg.text == 'No data found':
-        #     print("No data in the diksha table report page")
-        # else:
+
             regression_test = unittest.TestSuite()
             regression_test.addTests([
                 unittest.defaultTestLoader.loadTestsFromTestCase(diksha_table_system_testing.cQube_diskha_regression)
@@ -220,12 +210,7 @@ class MyTestSuite(unittest.TestCase):
             outfile.close()
 
     def test_issue10(self):
-        # self.data.navigate_to_diksha_column_chart()
-        # time.sleep(3)
-        # self.errMsg = self.data.get_data_status()
-        # if self.errMsg.text == 'No data found':
-        #     print("No data in the diksha column report page")
-        # else:
+
             regression_test = unittest.TestSuite()
             regression_test.addTests([
                 unittest.defaultTestLoader.loadTestsFromTestCase(column_system_testing.cQube_diskha_column_report)
@@ -244,12 +229,7 @@ class MyTestSuite(unittest.TestCase):
             outfile.close()
 
     def test_issue11(self):
-        # self.data.navigate_to_semester_exception()
-        # time.sleep(3)
-        # self.errMsg = self.data.get_data_status()
-        # if self.errMsg.text == 'No data found':
-        #     print("No data in the semester exception report page")
-        # else:
+
             regression_test = unittest.TestSuite()
             regression_test.addTests([
                 unittest.defaultTestLoader.loadTestsFromTestCase(exception_system_testing.cQube_semester_exception_report)
@@ -268,12 +248,7 @@ class MyTestSuite(unittest.TestCase):
             outfile.close()
 
     def test_issue12(self):
-        # self.data.navigate_to_telemetry()
-        # time.sleep(3)
-        # self.errMsg = self.data.get_data_status()
-        # if self.errMsg.text == 'No data found':
-        #     print("No data in the Telemetry  report page")
-        # else:
+
             regression_test = unittest.TestSuite()
             regression_test.addTests([
                 unittest.defaultTestLoader.loadTestsFromTestCase(
