@@ -583,3 +583,36 @@ class GetData():
                 "browserName": "chrome",
             }, options=options)
         return self.driver
+
+    def get_demoadmin_name(self):
+        config = configparser.ConfigParser()
+        config.read(self.p.get_config_ini_path())
+        return config['config']['createadmin']
+
+    def get_demoreport_name(self):
+        config = configparser.ConfigParser()
+        config.read(self.p.get_config_ini_path())
+        return config['config']['createviewer']
+
+    def get_demoemission_name(self):
+        config = configparser.ConfigParser()
+        config.read(self.p.get_config_ini_path())
+        return config['config']['createemission']
+
+    def get_demoadmin_password(self):
+        config = configparser.ConfigParser()
+        config.read(self.p.get_config_ini_path())
+        return config['config']['adminpassword']
+
+    def get_demoreport_password(self):
+        config = configparser.ConfigParser()
+        config.read(self.p.get_config_ini_path())
+        return config['config']['viewerpassword']
+
+    def get_demoemission_password(self):
+        config = configparser.ConfigParser()
+        config.read(self.p.get_config_ini_path())
+        return config['config']['emissionpassword']
+
+
+
