@@ -5,8 +5,7 @@ Prerequisites:
   To Run Selenium python scripts ,Install pycharm in your system
   Google Chrome need to be installed in the server or local machine.
   Chrome driver need to be downloaded and place this driver file in cQubeTesting-1.3/Driver folder
-  cQubeTesting-1.3 project need to be cloned from the github.
-  Click on add interpreter option below bar and add new venv 
+ 
   
 Steps to install the google chrome
 
@@ -19,7 +18,11 @@ Steps to Download the chrome driver
 Note: Based on chrome browser version need to download chrome driver 
    https://sites.google.com/a/chromium.org/chromedriver/downloads
    Unzip the chrome driver and place it in /usr/bin or /usr/local/bin.
-   
+
+Pycharm:
+  cQubeTesting-1.3 project need to be cloned from the github to your storage i.e /home/ubuntu/Downloads
+  Open project in pycharm and click on file -> Settings -> Project -> 
+
 Note : Java jdk1.8 need to be already installed in the machine
 Note:  execution of Admin console scripts , i.e  create_user.py script should provide the username and password in sendkeys.
 
