@@ -30,8 +30,8 @@ class MyTestSuite(unittest.TestCase):
 
 
     def test_issue01(self):
-        regression_test = unittest.TestSuite()
-        regression_test.addTests([
+        system_test = unittest.TestSuite()
+        system_test.addTests([
             # file name .class name
             unittest.defaultTestLoader.loadTestsFromTestCase(login_page.login),
         ])
@@ -44,7 +44,7 @@ class MyTestSuite(unittest.TestCase):
             verbosity=1,
 
         )
-        runner1.run(regression_test)
+        runner1.run(system_test)
         outfile.close()
 
     def test_issue03(self):
@@ -54,8 +54,8 @@ class MyTestSuite(unittest.TestCase):
         if self.errMsg.text == 'No data found':
             print("No data in the student attendance report page")
         else:
-            regression_test = unittest.TestSuite()
-            regression_test.addTests([
+            system_test = unittest.TestSuite()
+            system_test.addTests([
                 # file name .class name
                 unittest.defaultTestLoader.loadTestsFromTestCase(student_attendance_system_testing.cQube_Student_Attendance),
             ])
@@ -69,7 +69,7 @@ class MyTestSuite(unittest.TestCase):
 
             )
 
-            runner1.run(regression_test)
+            runner1.run(system_test)
             outfile.close()
 
     def test_issue04(self):
@@ -79,8 +79,8 @@ class MyTestSuite(unittest.TestCase):
         if self.errMsg.text == 'No data found':
             print("No data in the crc report page")
         else:
-            regression_test = unittest.TestSuite()
-            regression_test.addTests([
+            system_test = unittest.TestSuite()
+            system_test.addTests([
                 # file name .class name
                 unittest.defaultTestLoader.loadTestsFromTestCase(crc_report_system_testing.crc_System_Testing),
             ])
@@ -94,7 +94,7 @@ class MyTestSuite(unittest.TestCase):
 
             )
 
-            runner1.run(regression_test)
+            runner1.run(system_test)
             outfile.close()
 
     def test_issue05(self):
@@ -104,8 +104,8 @@ class MyTestSuite(unittest.TestCase):
         if self.errMsg.text == 'No data found':
             print("No data in the semester report page")
         else:
-            regression_test = unittest.TestSuite()
-            regression_test.addTests([
+            system_test = unittest.TestSuite()
+            system_test.addTests([
                 unittest.defaultTestLoader.loadTestsFromTestCase(semester_report_system_testing.cQube_Semester_Report),
             ])
             p = pwd()
@@ -118,7 +118,7 @@ class MyTestSuite(unittest.TestCase):
 
             )
 
-            runner1.run(regression_test)
+            runner1.run(system_test)
             outfile.close()
 
     def test_issue06(self):
@@ -128,8 +128,8 @@ class MyTestSuite(unittest.TestCase):
         if self.errMsg.text == 'No data found':
             print("No data in the school infra map report page")
         else:
-            regression_test = unittest.TestSuite()
-            regression_test.addTests([
+            system_test = unittest.TestSuite()
+            system_test.addTests([
                 # file name .class name
                 unittest.defaultTestLoader.loadTestsFromTestCase(school_map_system_testing.cQube_SI_Map_Report),
 
@@ -144,7 +144,7 @@ class MyTestSuite(unittest.TestCase):
 
             )
 
-            runner1.run(regression_test)
+            runner1.run(system_test)
             outfile.close()
 
     def test_issue07(self):
@@ -154,8 +154,8 @@ class MyTestSuite(unittest.TestCase):
         if self.errMsg.text == 'No data found':
             print("No data in the school infra report page")
         else:
-            regression_test = unittest.TestSuite()
-            regression_test.addTests([
+            system_test = unittest.TestSuite()
+            system_test.addTests([
                 unittest.defaultTestLoader.loadTestsFromTestCase(school_report_system_testing.cQube_SI_Report)
             ])
             p = pwd()
@@ -168,13 +168,13 @@ class MyTestSuite(unittest.TestCase):
 
             )
 
-            runner1.run(regression_test)
+            runner1.run(system_test)
             outfile.close()
 
     def test_issue08(self):
 
-            regression_test = unittest.TestSuite()
-            regression_test.addTests([
+            system_test = unittest.TestSuite()
+            system_test.addTests([
                 unittest.defaultTestLoader.loadTestsFromTestCase(diksha_chart_system_testing.cQube_diskha_chart)
             ])
             p = pwd()
@@ -187,13 +187,13 @@ class MyTestSuite(unittest.TestCase):
 
             )
 
-            runner1.run(regression_test)
+            runner1.run(system_test)
             outfile.close()
 
     def test_issue09(self):
 
-            regression_test = unittest.TestSuite()
-            regression_test.addTests([
+            system_test = unittest.TestSuite()
+            system_test.addTests([
                 unittest.defaultTestLoader.loadTestsFromTestCase(diksha_table_system_testing.cQube_diskha_regression)
             ])
             p = pwd()
@@ -206,13 +206,13 @@ class MyTestSuite(unittest.TestCase):
 
             )
 
-            runner1.run(regression_test)
+            runner1.run(system_test)
             outfile.close()
 
     def test_issue10(self):
 
-            regression_test = unittest.TestSuite()
-            regression_test.addTests([
+            system_test = unittest.TestSuite()
+            system_test.addTests([
                 unittest.defaultTestLoader.loadTestsFromTestCase(column_system_testing.cQube_diskha_column_report)
             ])
             p = pwd()
@@ -225,13 +225,13 @@ class MyTestSuite(unittest.TestCase):
 
             )
 
-            runner1.run(regression_test)
+            runner1.run(system_test)
             outfile.close()
 
     def test_issue11(self):
 
-            regression_test = unittest.TestSuite()
-            regression_test.addTests([
+            system_test = unittest.TestSuite()
+            system_test.addTests([
                 unittest.defaultTestLoader.loadTestsFromTestCase(exception_system_testing.cQube_semester_exception_report)
             ])
             p = pwd()
@@ -244,13 +244,13 @@ class MyTestSuite(unittest.TestCase):
 
             )
 
-            runner1.run(regression_test)
+            runner1.run(system_test)
             outfile.close()
 
     def test_issue12(self):
 
-            regression_test = unittest.TestSuite()
-            regression_test.addTests([
+            system_test = unittest.TestSuite()
+            system_test.addTests([
                 unittest.defaultTestLoader.loadTestsFromTestCase(
                     telemetry_system_testing.Test_Telemetry)
             ])
@@ -264,7 +264,7 @@ class MyTestSuite(unittest.TestCase):
 
             )
 
-            runner1.run(regression_test)
+            runner1.run(system_test)
             outfile.close()
 
     @classmethod
