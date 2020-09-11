@@ -3,7 +3,8 @@ from CRC import crc_report_smoke_testing
 from Diksha_Reports.Diksha_charts import diksha_chart_smoke_testing
 from Diksha_Reports.Diksha_column_chart import column_smoke_testing
 from Diksha_Reports.Diksha_table_report import diksha_table_smoke_testing
-from Landing_Page import cQube_home_page, cQube_landing_page
+from Landing_Page import cQube_landing_page
+from Login import login_page
 from SAR import student_attendance_smoke_testing
 from SI.MAP import School_Map_smoke_testing
 from SI.Report import School_report_smoke_testing
@@ -36,7 +37,7 @@ class MyTestSuite(unittest.TestCase):
         smoke_test = unittest.TestSuite()
         smoke_test.addTests([
             # file name .class name
-            unittest.defaultTestLoader.loadTestsFromTestCase(login_smoke_testing.cQube_Login_smoke_Test),
+            unittest.defaultTestLoader.loadTestsFromTestCase(login_page.login),
         ])
         p = pwd()
         outfile = open(p.get_smoke_report_path(), "w")

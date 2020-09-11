@@ -5,9 +5,5 @@ configparser==5.0.0
 pathlib==1.0.1
 metadata==1.10.0
 html == 2.1.1 
-forked == 1.2.0
-xdist == 1.33.0
 html==2.1.1
-forked==1.2.0 
-xdist==1.33.0
-pytest==1.2.0
+Pyselenium==3.4.1

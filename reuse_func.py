@@ -49,18 +49,6 @@ class GetData():
         self.driver=webdriver.Chrome(options=options,executable_path=self.p.get_driver_path())
         return self.driver
 
-    # if you using selenium grid , please use below get_driver method
-    # def get_driver(self):
-    #     options = webdriver.ChromeOptions()
-    #     prefs = {'download.default_directory': self.p.get_download_dir()}
-    #     options.add_experimental_option('prefs', prefs)
-    #     self.driver = webdriver.Remote(
-    #         command_executor="http://localhost:4444/wd/hub",
-    #         desired_capabilities={
-    #             "browserName": "chrome",
-    #         },options=options)
-    #     return self.driver
-
 
     def open_cqube_appln(self,driver):
         self.driver = driver
