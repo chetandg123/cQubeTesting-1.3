@@ -54,7 +54,9 @@ Navigate to cQubeTesting-1.3 Directory in the terminal (ex cd /home/ubuntu/cQube
 	For Smoke Testing:
 		python3 -m unittest TestSuites/SmokeTestSuite/Smoke_Testing.py
 		python3 -m unittest Admin_console/Admin_smoke_testsuit.py
-	
+
+if any  ImportError: bad magic number in : b'\x03\xf3\r\n' then use this command and again restart execution 
+			sudo find . -name "*.pyc" -exec rm -f {} \;	
 VPN CONNECTION:	  
 Please follow the steps for run testscripts for admin console
 	  	1> open vpn based url in browser 
